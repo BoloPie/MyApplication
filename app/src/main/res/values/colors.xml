@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--条件选择bar分割线-->
+    <color name="view_filter_list_diver">#1E000000</color>
+    <color name="view_filter_menu_diver">#BDBDBD</color>
+    <color name="selection_gray">#f4f4fa</color><!-- 被选中的背景色 -->
+    <color name="grand_item_bg">#E8EAF6</color>
+    <color name="bg_gray">#dddddd</color>
+    <color name="transparency">#ffffffff</color>
+    <color name="pop_bg">#b0000000</color>
+    <color name="white">#ffffff</color>
+    <color name="text_black_12">#1E000000</color>
+    <!--54% — 8A  减淡文字 -->
+    <color name="text_black_54">#8A000000</color>
+    <color name="color_light_blue_500">#03A9F4</color>
+
+</resources>

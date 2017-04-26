@@ -1,0 +1,71 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/activity_main_pop_follow_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="悬浮-pop跟随"
+        android:visibility="gone" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="#000000"
+            app:layout_scrollFlags="scroll">
+            <!--scroll|exitUntilCollapsed|snap-->
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/view_filter_list_diver"
+                android:gravity="center"
+                android:text="DropDownMenu"
+                android:textColor="@color/transparency"
+                android:textSize="16sp" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <com.example.popbar.view.ExpandMenuView
+            android:id="@+id/expandTabView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/view_filter_menu_diver"
+            android:dividerPadding="1px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/view_filter_menu_diver" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.example.popbar.view.NoScrollListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray"
+            android:divider="@color/view_filter_list_diver"
+            android:dividerHeight="1px"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
